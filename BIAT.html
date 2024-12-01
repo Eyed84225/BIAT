@@ -1,0 +1,65 @@
+<!-- Taren Miller -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bringing it all together</title>
+ </head>
+ <style>
+.container{
+    position: relative;
+    overflow: hidden;
+    height: 300px; /* Set the height of the container */
+}
+
+#meme{
+    position: absolute;
+    bottom: 0; /* Start at the bottom of the container */
+}
+/* Actual Styling */
+body{
+    background-color: rgb(212, 221, 245);
+}
+
+form{
+    text-align: center;
+}
+h1{
+    text-align: center;
+}
+</style>
+
+<body>
+<h1>Test Bed Website</h1>
+    <form id="registrationForm" onsubmit="validateform()">
+        <label for="username">Username</label><br>
+        <input type="text" id="username" name="username"><br><br>
+<!-- Input area for username -->
+        <label for="password">Password</label><br>
+        <input type="password" id="password" name="password"><br><br>
+<!-- Input area for a Password -->
+        <label for="confirmpassword">Confirm Password</label><br>
+        <input type="password" id="confirmpassword" name="confirmpassword"><br><br>
+<!-- Input area for a Password -->
+        <input type="submit" value="Submit">
+    </form>
+<br>
+
+<p id="string">Hi, this page is for a project for CSC 102</p>
+<button onclick="changethewords()">Change The Sentence</button>
+
+<p>Do you like Pizza?</p><br>
+<p id="anwser"></p>
+<input type="text" id="response">
+<button onclick="decision()">Submit</button>
+
+<div class="container"> 
+    <img src="Meme.jpg" id="meme" alt="My Meme" width="200" height="200">
+</div>
+<button type="button" onclick="bounce()" id="start">Start</button> 
+<button type="button" id="stop">Stop</button>
+
+<script src="BAIT.js"></script>
+</body>
+</html>
